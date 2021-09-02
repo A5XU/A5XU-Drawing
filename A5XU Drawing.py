@@ -66,8 +66,10 @@ toolkit.create_text(25+9*40, 58, text="8", fill="black")
 turn=1
 
 print("""
+Instructions:
+
 Move using the arrow keys.
-Press space to leave mark.
+Press space draw.
 
 Copy & Paste the code below to your file:
 
