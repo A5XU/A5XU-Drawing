@@ -69,6 +69,8 @@ print("""
 Move using the arrow keys.
 Press space to leave mark.
 
+Copy & Paste the code below to your file:
+
 from tkinter import *
 window=Tk()
 window.title("Unnamed")
