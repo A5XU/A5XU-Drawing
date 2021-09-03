@@ -57,85 +57,6 @@ toolkit.move(effect7, 25+8*40, 25)
 effect8 = toolkit.create_rectangle(-20,-20,20,20, outline="black", state=HIDDEN)
 toolkit.move(effect8, 25+9*40, 25)
 effect9 = toolkit.create_rectangle(-20,-20,20,20, outline="black", state=HIDDEN)
-toolkit.move(effect8, 25+10*40, 25)
-
-toolkit.create_text(25+40, 58, text="1", fill="black")
-toolkit.create_text(25+2*40, 58, text="2", fill="black")
-toolkit.create_text(25+4*40, 58, text="3", fill="black")
-toolkit.create_text(25+5*40, 58, text="4", fill="black")
-toolkit.create_text(25+6*40, 58, text="5", fill="black")
-toolkit.create_text(25+7*40, 58, text="6", fill="black")
-toolkit.create_text(25+8*40, 58, text="7", fill="black")
-toolkit.create_text(25+9*40, 58, text="8", fill="black")
-toolkit.create_text(25+10*40, 58, text="9", fill="black")
-toolkit.create_text(25+10*40, 58-33, text="col", fill="black")
-
-turn=1
-
-print("""
-Instructions:
-
-Move using the arrow keys.
-press space to draw.
-
-Copy & Paste the code below to a new file to save your project.
-
-window = Tk()
-window.title("A5XU Drawing")
-
-area_height = 450
-area_width = 800
-central_x = area_width/2
-central_y = area_height/2
-
-toolkit = Canvas(window, width=800, height=75, bg="lightgrey") 
-area = Canvas(window, width=area_width, height=area_height, bg="white")
-toolkit.pack()
-area.pack() 
-
-pen = area.create_rectangle(-5,-5,5,5, fill="black")
-area.move(pen, central_x, central_y)
-pen_x = 0
-pen_y = 0
-color = 1
-
-black = toolkit.create_rectangle(-15,-15,15,15, fill="black")
-white = toolkit.create_rectangle(-15,-15,15,15, fill="white")
-red = toolkit.create_rectangle(-15,-15,15,15, fill="red")
-yellow = toolkit.create_rectangle(-15,-15,15,15, fill="yellow")
-green = toolkit.create_rectangle(-15,-15,15,15, fill="green")
-cyan = toolkit.create_rectangle(-15,-15,15,15, fill="cyan")
-blue = toolkit.create_rectangle(-15,-15,15,15, fill="blue")
-magenta = toolkit.create_rectangle(-15,-15,15,15, fill="magenta")
-cchooser = toolkit.create_rectangle(-15,-15,15,15, fill="lightgrey")
-
-toolkit.move(black, 25+40, 25)
-toolkit.move(white, 25+2*40, 25)
-toolkit.move(red, 25+4*40, 25)
-toolkit.move(yellow, 25+5*40, 25)
-toolkit.move(green, 25+6*40, 25)
-toolkit.move(cyan, 25+7*40, 25)
-toolkit.move(blue, 25+8*40, 25)
-toolkit.move(magenta, 25+9*40, 25)
-toolkit.move(cchooser, 25+10*40, 25)
-
-effect1 = toolkit.create_rectangle(-20,-20,20,20, outline="black", state=NORMAL)
-toolkit.move(effect1, 25+40, 25)
-effect2 = toolkit.create_rectangle(-20,-20,20,20, outline="black", state=HIDDEN)
-toolkit.move(effect2, 25+2*40, 25)
-effect3 = toolkit.create_rectangle(-20,-20,20,20, outline="black", state=HIDDEN)
-toolkit.move(effect3, 25+4*40, 25)
-effect4 = toolkit.create_rectangle(-20,-20,20,20, outline="black", state=HIDDEN)
-toolkit.move(effect4, 25+5*40, 25)
-effect5 = toolkit.create_rectangle(-20,-20,20,20, outline="black", state=HIDDEN)
-toolkit.move(effect5, 25+6*40, 25)
-effect6 = toolkit.create_rectangle(-20,-20,20,20, outline="black", state=HIDDEN)
-toolkit.move(effect6, 25+7*40, 25)
-effect7 = toolkit.create_rectangle(-20,-20,20,20, outline="black", state=HIDDEN)
-toolkit.move(effect7, 25+8*40, 25)
-effect8 = toolkit.create_rectangle(-20,-20,20,20, outline="black", state=HIDDEN)
-toolkit.move(effect8, 25+9*40, 25)
-effect9 = toolkit.create_rectangle(-20,-20,20,20, outline="black", state=HIDDEN)
 toolkit.move(effect9, 25+10*40, 25)
 
 toolkit.create_text(25+40, 58, text="1", fill="black")
@@ -157,7 +78,7 @@ Instructions:
 Move using the arrow keys.
 Press space draw.
 
-Copy & Paste the code below to a new file to save your project.
+Copy & Paste the code below to your file:
 
 from tkinter import *
 window=Tk()
@@ -366,5 +287,3 @@ def control(event):
         area.move(pen, central_x + pen_x, central_y + pen_y)
 
 area.bind_all("<Key>", control)
-
-
