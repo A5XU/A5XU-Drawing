@@ -2,7 +2,7 @@ from tkinter import *
 from tkinter import colorchooser
 
 window = Tk()
-window.title("A5XU Drawing")
+window.title("PyDraw")
 
 area_height = 450
 area_width = 800
